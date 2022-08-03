@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  .logo {
+    height: 5em;
+    display: block;
+
+  }
+}
+
+.btn {
+  width: auto;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .search-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container span {
+  color: red;
+}
+
+.search-container input {
+  height: 20px;
+  font-size: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-width: 1px;
+  border-color: #ccc;
+  color: rgb(80, 79, 79);
+  flex: 1;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-container .fa {
+  height: 22px;
+  width: 28px;
+  color: rgb(22, 5, 5);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-keyword-container {
+  display: flex;
+  justify-content: left;
+}
+
+.search-keyword-container .keyword {
+  width: auto;
+  padding: 5px 20px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #009999;
+}
+
+.search-result-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.search-result-container .row {
+  padding: 5px;
+}
+
+.search-result-container .row span::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.search-result-container .row p {
+  display: inline;
+}
+
+.search-result-container .row a {
+  color: #002699ba;
+}
+
+.search-pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.page-btn {
+  border: 1px solid #a0a3bd;
+  color: #000000;
+  border-radius: 25px;
+  padding: 6px 25px;
+  margin-right: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  background-color: #e6e6e6;
+}
